@@ -125,8 +125,16 @@ export interface ModelSettings {
     topP: number
     openaiMaxContextMessageCount: number
 }
-
+export interface MCPServerConfig {
+    id: string;
+    name: string;
+    description: string;
+    commandLine: string;
+    enabled: boolean;
+    status: 'connecting' | 'connected' | 'disconnected' | 'error';
+}
 export interface Settings extends ModelSettings {
+    mcpServers: MCPServerConfig[];
     showWordCount?: boolean
     showTokenCount?: boolean
     showTokenUsed?: boolean

@@ -57,6 +57,8 @@ export function settings(): Settings {
         ppioModel: 'deepseek/deepseek-r1/community',
 
         autoGenerateTitle: true,
+        mcpServers: [], // 初始为空数组
+
     }
 }
 

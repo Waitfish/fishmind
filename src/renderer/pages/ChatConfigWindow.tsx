@@ -17,6 +17,7 @@ import * as sessionActions from '../stores/sessionActions'
 import * as atoms from '../stores/atoms'
 import { useAtom } from 'jotai'
 import { trackingEvent } from '@/packages/event'
+import MCPServerManager from '../components/MCPServerManager' // 引入
 
 interface Props {
 }
